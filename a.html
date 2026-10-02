@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>林彥辰｜產品設計師 × 前端工程師</title>
+<meta name="description" content="產品設計師與前端工程師，專注把複雜的流程收斂成清楚、好用、一眼就懂的介面。作品集與合作邀約。">
+<meta name="theme-color" content="#f8fafc">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="林彥辰｜產品設計師 × 前端工程師">
+<meta property="og:description" content="設計與實作，不該是兩件事。精選三個產品設計與前端實作案例。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231b4dd8'/%3E%3Cpath d='M11 9v14M21 9v14' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- 樣式載入順序：字型 → 共用底層 → 版本主題 -->
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/a.css">
+<script>
+  /* 進場動效的保險：site.js 若沒在 1.5 秒內就緒，就關掉所有隱藏狀態，
+     確保任何 JS 失敗的情況下內容依然完整可讀。 */
+  document.documentElement.classList.add('js');
+  setTimeout(function () {
+    if (!document.documentElement.hasAttribute('data-ready')) {
+      document.documentElement.classList.remove('js');
+    }
+  }, 1500);
+</script>
+<script defer src="assets/js/site.js"></script>
+
+<!--
+  ⚠ 本頁所有文字（姓名、經歷、專案、數據、Email）都是示範內容，
+    上線前請全部替換成你的真實資訊。搜尋「示範」可快速找到需要改的位置。
+-->
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到主要內容</a>
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>IMYWK</span>
+    </a>
+
+    <nav class="nav" aria-label="主要導覽">
+      <a class="nav__link" href="#about">關於</a>
+      <a class="nav__link" href="#work">作品</a>
+      <a class="btn btn--primary header-cta" href="#contact">與我聯繫</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ Hero ============================ -->
+  <section class="hero" id="top">
+    <div class="shell hero__inner">
+
+      <div class="hero__copy">
+        <p class="eyebrow" data-reveal>
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          目前開放全職與合作機會
+        </p>
+
+        <h1 class="hero__title" data-reveal>
+          設計與實作，<br>不該是<em>兩件事</em>。
+        </h1>
+
+        <p class="hero__sub" data-reveal>
+          產品設計師 × 前端工程師。我把複雜的流程，收斂成清楚、好用、一眼就懂的介面。
+        </p>
+
+        <div class="hero__actions" data-reveal>
+          <a class="btn btn--primary" href="#work">瀏覽精選作品</a>
+          <a class="btn btn--ghost" href="#contact">與我聯繫</a>
+        </div>
+      </div>
+
+      <!-- 抽象視覺：SVG 漸層遮罩 + 緩慢浮動的幾何圖形 -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="mesh">
+          <svg viewBox="0 0 500 400" preserveAspectRatio="none" role="presentation" focusable="false">
+            <defs>
+              <radialGradient id="a-blob-1" cx="30%" cy="24%" r="62%">
+                <stop offset="0" stop-color="#6f9bff" stop-opacity=".95"/>
+                <stop offset="1" stop-color="#6f9bff" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="a-blob-2" cx="76%" cy="72%" r="58%">
+                <stop offset="0" stop-color="#1b4dd8" stop-opacity=".68"/>
+                <stop offset="1" stop-color="#1b4dd8" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="a-blob-3" cx="62%" cy="18%" r="46%">
+                <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+              </radialGradient>
+
+              <!-- 漸層遮罩只用來淡化點陣，不套在光暈上，避免品牌色被吃掉 -->
+              <linearGradient id="a-fade" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                <stop offset="58%" stop-color="#fff" stop-opacity=".7"/>
+                <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+              </linearGradient>
+              <mask id="a-mask">
+                <rect width="500" height="400" fill="url(#a-fade)"/>
+              </mask>
+
+              <filter id="a-soft" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="30"/>
+              </filter>
+
+              <pattern id="a-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="1.5" cy="1.5" r="1.5" fill="#0b1220" opacity=".22"/>
+              </pattern>
+            </defs>
+
+          <g filter="url(#a-soft)">
+            <ellipse cx="128" cy="86" rx="180" ry="150" fill="url(#a-blob-1)"/>
+            <ellipse cx="392" cy="312" rx="186" ry="158" fill="url(#a-blob-2)"/>
+            <ellipse cx="268" cy="196" rx="120" ry="96" fill="url(#a-blob-3)"/>
+          </g>
+
+          <rect x="210" y="110" width="290" height="250" fill="url(#a-dots)" mask="url(#a-mask)"/>
+
+          <g fill="none" stroke="#1b4dd8">
+            <path d="M0 322 Q 128 272 256 322 T 512 322" stroke-opacity=".34" stroke-width="1.5"/>
+            <path d="M0 350 Q 128 300 256 350 T 512 350" stroke-opacity=".16" stroke-width="1"/>
+            <circle cx="404" cy="118" r="74" stroke-opacity=".2"/>
+          </g>
+          </svg>
+        </div>
+        <span class="shape shape--ring"></span>
+        <span class="shape shape--sq"></span>
+        <span class="shape shape--dot"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ About ============================ -->
+  <section class="section" id="about">
+    <div class="shell about__grid">
+
+      <div class="about__aside" data-reveal>
+        <h2 class="section-title">關於我</h2>
+        <p class="lead">
+          我在設計與工程之間工作，把抽象的商業目標，翻譯成能被實作、也能被驗證的介面決策。
+        </p>
+      </div>
+
+      <div class="about__body">
+        <p class="prose" data-reveal>
+          六年來我參與金融、電商與 SaaS 產品的設計與前端實作。從使用者訪談、流程規劃、原型驗證，到
+          Design System 的建立與元件切版，我習慣把整條路走完，因為最好的設計，往往取決於最後一公里的實作細節。
+        </p>
+
+        <ul class="caps ruled" data-reveal-group>
+          <li class="cap" data-reveal>
+            <h3 class="cap__title">以證據設計</h3>
+            <p class="cap__text">先訪談與看數據，再決定要做什麼。優先順序來自使用者的困難，不是個人偏好。</p>
+          </li>
+          <li class="cap" data-reveal>
+            <h3 class="cap__title">把系統做小</h3>
+            <p class="cap__text">建立可複用的設計系統與 token，讓三條產品線改一個地方就同步，而不是各自複製。</p>
+          </li>
+          <li class="cap" data-reveal>
+            <h3 class="cap__title">實作到細節</h3>
+            <p class="cap__text">直接寫前端，從斷點、動效到無障礙狀態，確保上線成品與設計稿一致。</p>
+          </li>
+        </ul>
+
+        <dl class="facts" data-reveal-group>
+          <div class="fact" data-reveal>
+            <dt class="fact__k">專業領域</dt>
+            <dd class="fact__v">產品設計 · 前端工程 · 設計系統</dd>
+          </div>
+          <div class="fact" data-reveal>
+            <dt class="fact__k">近期經歷</dt>
+            <dd class="fact__v">2022 至今 · 產品設計師 / 前端工程師</dd>
+          </div>
+          <div class="fact" data-reveal>
+            <dt class="fact__k">合作方式</dt>
+            <dd class="fact__v">全職機會 · 專案合作 · 設計顧問</dd>
+          </div>
+          <div class="fact" data-reveal>
+            <dt class="fact__k">常用工具</dt>
+            <dd class="fact__v">Figma · HTML / CSS · TypeScript</dd>
+          </div>
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ Work ============================ -->
+  <section class="section" id="work">
+    <div class="shell">
+      <div class="work__head" data-reveal>
+        <h2 class="section-title">精選作品</h2>
+        <p>三個從問題定義到上線都親手做完的專案，附上實際量測到的結果。</p>
+      </div>
+
+      <div class="work__grid" data-reveal-group>
+
+        <!-- 主打案例 -->
+        <article class="project project--feature" data-reveal data-tilt="4">
+          <a class="project__link" href="#">
+            <div class="cover" role="img" aria-label="示範封面：漸層與圓弧構成的抽象圖形">
+              <span class="cover-art art--1"></span>
+            </div>
+            <div class="project__body">
+              <p class="project__meta">2025 · 產品設計 / 前端實作</p>
+              <h3 class="project__title">跨境電商結帳流程重設計</h3>
+              <p class="project__desc">
+                把六個步驟的結帳流程重組成三步，移除重複欄位與中途註冊，並重寫整個表單的錯誤提示。
+              </p>
+              <p class="project__result">完成率 +18% · 步驟 6 → 3</p>
+              <span class="project__more">
+                看專案細節
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h9M8.5 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project" data-reveal data-tilt="5">
+          <a class="project__link" href="#">
+            <div class="cover" role="img" aria-label="示範封面：點陣網格與柔和漸層">
+              <span class="cover-art art--2"></span>
+            </div>
+            <div class="project__body">
+              <p class="project__meta">2024 · 設計系統</p>
+              <h3 class="project__title">SaaS 數據後台設計系統</h3>
+              <p class="project__desc">
+                為三條產品線建立共用元件庫與 design token，把設計決策寫成可被工程直接引用的規格。
+              </p>
+              <p class="project__result">42 個元件 · 3 條產品線共用</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project" data-reveal data-tilt="5">
+          <a class="project__link" href="#">
+            <div class="cover" role="img" aria-label="示範封面：深色斜線光束">
+              <span class="cover-art art--3"></span>
+            </div>
+            <div class="project__body">
+              <p class="project__meta">2023 · 無障礙 / 介面重構</p>
+              <h3 class="project__title">行動銀行無障礙改版</h3>
+              <p class="project__desc">
+                重新檢視對比、焦點順序、螢幕報讀與字級縮放，讓主要交易流程在輔助科技下也能完成。
+              </p>
+              <p class="project__result">通過 WCAG 2.2 AA · 客服進線 −12%</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ Contact ============================ -->
+  <section class="section" id="contact">
+    <div class="shell">
+      <div class="contact-panel" data-reveal>
+        <h2>有合適的專案或職位嗎？</h2>
+        <p>我通常會在兩個工作日內回覆。歡迎附上需求背景與時程，我會先回覆可行性與建議做法。</p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:hello@example.com">與我聯繫</a>
+          <a class="btn btn--ghost" href="https://github.com/IMYWK">GitHub</a>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <span>© 2026 IMYWK · 林彥辰</span>
+          <nav class="footer-nav" aria-label="頁尾導覽">
+            <a class="link" href="#about">關於</a>
+            <a class="link" href="#work">作品</a>
+            <a class="link" href="#contact">與我聯繫</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

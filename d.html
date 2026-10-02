@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>林彥辰｜產品設計師 × 前端工程師</title>
+<meta name="description" content="產品設計師與前端工程師，專注把複雜的流程收斂成清楚、好用、一眼就懂的介面。作品集與合作邀約。">
+<meta name="theme-color" content="#f5f0e8">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="林彥辰｜產品設計師 × 前端工程師">
+<meta property="og:description" content="介面要像一本讀得順的書。精選三個產品設計與前端實作案例。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f5f0e8'/%3E%3Crect x='9' y='8' width='3' height='16' fill='%236e1b2a'/%3E%3Crect x='20' y='8' width='3' height='16' fill='%236e1b2a'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/d.css">
+<script>
+  /* 進場動效的保險：site.js 若沒在 1.5 秒內就緒，就關掉所有隱藏狀態，
+     確保任何 JS 失敗的情況下內容依然完整可讀。 */
+  document.documentElement.classList.add('js');
+  setTimeout(function () {
+    if (!document.documentElement.hasAttribute('data-ready')) {
+      document.documentElement.classList.remove('js');
+    }
+  }, 1500);
+</script>
+<script defer src="assets/js/site.js"></script>
+
+<!--
+  ⚠ 本頁所有文字都是示範內容，上線前請替換成你的真實資訊。
+    此版啟用：捲動進場、作品封面濾鏡切換（可存取的 button + aria-pressed）。
+-->
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到主要內容</a>
+<span class="grain" aria-hidden="true"></span>
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="brand" href="#top">IMYWK</a>
+    <nav class="nav" aria-label="主要導覽">
+      <a class="nav__link" href="#about">關於</a>
+      <a class="nav__link" href="#work">作品</a>
+      <a class="btn btn--primary header-cta" href="#contact">與我聯繫</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ Hero ============================ -->
+  <section class="hero" id="top">
+    <div class="shell">
+
+      <p class="hero__rule" data-reveal>
+        <span aria-hidden="true"></span>
+        <span>Portfolio</span>
+      </p>
+
+      <div class="hero__grid">
+
+        <h1 class="hero__title" data-reveal>
+          介面要像一本讀得順的書。
+          <span class="hero__title-en">Stories, made usable.</span>
+        </h1>
+
+        <p class="hero__sub" data-reveal>
+          我是林彥辰，產品設計師與前端工程師。我相信好產品像一本好書：翻到哪裡都順，而且有記得住的地方。
+        </p>
+
+        <div class="hero__actions" data-reveal>
+          <a class="btn btn--primary" href="#work">瀏覽精選作品</a>
+          <a class="btn btn--ghost" href="#contact">與我聯繫</a>
+        </div>
+
+        <div class="hero__frame" aria-hidden="true">
+          <span class="cover-art art--cream"></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ About ============================ -->
+  <section class="section" id="about">
+    <div class="shell d-about">
+
+      <div class="d-about__figure" data-reveal>
+        <div class="d-frame" aria-hidden="true">
+          <span class="cover-art art--linen"></span>
+        </div>
+      </div>
+
+      <div class="d-about__body">
+        <h2 class="section-title" data-reveal>關於我</h2>
+        <p class="d-lead" data-reveal>
+          在設計與工程之間工作，把抽象的商業目標，翻譯成能被實作、也能被驗證的介面決策。
+        </p>
+        <p class="prose" data-reveal>
+          六年來我參與金融、電商與 SaaS 產品的設計與前端實作。從使用者訪談、流程規劃、原型驗證，到
+          Design System 的建立與元件切版，我習慣把整條路走完，因為故事要說得動人，得先讓它真的能用。
+        </p>
+
+        <ul class="d-list" data-reveal>
+          <li>
+            <span class="d-list__k">專業領域</span>
+            <span class="d-list__v">產品設計 · 前端工程 · 設計系統</span>
+          </li>
+          <li>
+            <span class="d-list__k">近期經歷</span>
+            <span class="d-list__v">2022 至今 · 產品設計師 / 前端工程師</span>
+          </li>
+          <li>
+            <span class="d-list__k">合作方式</span>
+            <span class="d-list__v">全職機會 · 專案合作 · 設計顧問</span>
+          </li>
+          <li>
+            <span class="d-list__k">常用工具</span>
+            <span class="d-list__v">Figma · HTML / CSS · TypeScript</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ Work ============================ -->
+  <section class="section" id="work">
+    <div class="shell">
+
+      <div class="d-work__head" data-reveal>
+        <div>
+          <h2 class="section-title">精選作品</h2>
+          <p>三個從問題定義到上線都親手做完的專案，附上實際量測到的結果。</p>
+        </div>
+        <button class="d-toggle" type="button"
+                data-filter-toggle data-filter-target="[data-filter-root]"
+                aria-pressed="true">復古色調</button>
+      </div>
+
+      <div class="d-grid" data-filter-root data-reveal-group>
+
+        <a class="d-card" href="#" data-reveal>
+          <span class="cover" role="img" aria-label="示範封面：暖色紙張與圓形框線">
+            <span class="cover-art art--cream"></span>
+          </span>
+          <span class="d-card__body">
+            <span class="d-card__meta">2025 · 產品設計 / 前端實作</span>
+            <span class="d-card__title">跨境電商結帳流程重設計</span>
+            <span class="d-card__desc">六個步驟重組成三步，移除重複欄位與中途註冊，重寫整份表單的錯誤提示。</span>
+            <span class="d-card__result">完成率 +18% · 步驟 6 → 3</span>
+          </span>
+        </a>
+
+        <a class="d-card" href="#" data-reveal>
+          <span class="cover" role="img" aria-label="示範封面：亞麻布料紋理">
+            <span class="cover-art art--linen"></span>
+          </span>
+          <span class="d-card__body">
+            <span class="d-card__meta">2024 · 設計系統</span>
+            <span class="d-card__title">SaaS 數據後台設計系統</span>
+            <span class="d-card__desc">為三條產品線建立共用元件庫與 design token，把設計決策寫成工程可直接引用的規格。</span>
+            <span class="d-card__result">42 個元件 · 3 條產品線共用</span>
+          </span>
+        </a>
+
+        <a class="d-card" href="#" data-reveal>
+          <span class="cover" role="img" aria-label="示範封面：深色底片格紋">
+            <span class="cover-art art--film"></span>
+          </span>
+          <span class="d-card__body">
+            <span class="d-card__meta">2023 · 無障礙 / 介面重構</span>
+            <span class="d-card__title">行動銀行無障礙改版</span>
+            <span class="d-card__desc">重新檢視對比、焦點順序、螢幕報讀與字級縮放，讓主要交易流程在輔助科技下也能完成。</span>
+            <span class="d-card__result">通過 WCAG 2.2 AA · 客服進線 −12%</span>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ Contact ============================ -->
+  <section class="section d-contact" id="contact">
+    <div class="shell" data-reveal>
+      <div class="d-contact__rule" aria-hidden="true"></div>
+      <h2 class="d-contact__title">有合適的專案或職位嗎？</h2>
+      <p class="d-contact__text">我通常會在兩個工作日內回覆。歡迎附上需求背景與時程，我會先回覆可行性與建議做法。</p>
+      <div class="d-contact__actions">
+        <a class="btn btn--primary" href="mailto:hello@example.com">與我聯繫</a>
+        <a class="btn btn--ghost" href="https://github.com/IMYWK">GitHub</a>
+      </div>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <span>© 2026 IMYWK · 林彥辰</span>
+          <nav class="footer-nav" aria-label="頁尾導覽">
+            <a class="link" href="#about">關於</a>
+            <a class="link" href="#work">作品</a>
+            <a class="link" href="#contact">與我聯繫</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
