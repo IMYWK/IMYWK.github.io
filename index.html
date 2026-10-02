@@ -1,200 +1,78 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>首頁設計提案｜四個方向 · IMYWK</title>
-<meta name="description" content="個人品牌／作品集首頁的四個設計方向比較頁，含即時預覽與切換說明。">
-<meta name="theme-color" content="#f7f7f3">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23171918'/%3E%3Cpath d='M10 10v12M16 10v12M22 10v12' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="The personal website of Yin Wing Kei, a Computer Engineering student at HKUST."
+    >
+    <meta name="theme-color" content="#f5f3ee">
+    <title>Yin Wing Kei | Personal Website</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2323543b'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Georgia' font-size='24' fill='white'%3EYWK%3C/text%3E%3C/svg%3E"
+    >
+    <link rel="stylesheet" href="assets/css/home.css">
+  </head>
 
-<link rel="stylesheet" href="assets/css/fonts.css">
-<link rel="stylesheet" href="assets/css/base.css">
-<link rel="stylesheet" href="assets/css/index.css">
-</head>
-<body>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<a class="skip-link" href="#main">跳到主要內容</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Yin Wing Kei, homepage">YWK</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+      </nav>
+    </header>
 
-<header class="hub-header">
-  <div class="shell">
-    <p class="hub-eyebrow">IMYWK · Homepage Directions</p>
-    <h1 class="hub-title">四個首頁方向，挑一個當門面。</h1>
-    <p class="hub-intro">
-      同一份內容（Hero / 關於我 / 精選作品 / 聯絡）用四種視覺語言各做一次。
-      下面每一張卡都是真實頁面的即時預覽，不是截圖；點「開啟」就能看完整版本與手機版排版。
-    </p>
-    <p class="hub-note">
-      <span>全部原生 HTML / CSS / JS，沒有框架</span>
-      <span>共用 <code>base.css</code> 與 <code>site.js</code>，每版只有一支主題 CSS</span>
-      <span>字型自架 <code>216 KB</code>，執行期零外部請求</span>
-    </p>
-  </div>
-</header>
-
-<main class="shell" id="main">
-  <div class="hub-grid">
-
-    <!-- A -->
-    <article class="hub-card">
-      <div class="preview" style="--preview-bg:#f8fafc">
-        <iframe src="a.html" title="A 版即時預覽：專業清新 SaaS" loading="lazy"></iframe>
-      </div>
-      <div class="hub-card__body">
-        <div class="hub-card__top">
-          <span class="hub-badge">A</span>
-          <span class="hub-file">a.html</span>
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <div class="hero__content">
+          <p class="eyebrow">Personal website</p>
+          <h1 id="page-title">Yin Wing Kei</h1>
+          <p class="hero__intro">
+            Computer Engineering student at The Hong Kong University of
+            Science and Technology.
+          </p>
+          <a class="button" href="#about">More about me</a>
         </div>
-        <h2 class="hub-card__name">專業清新 SaaS</h2>
-        <p class="hub-card__desc">
-          明亮底、大留白、柔和陰影，搭配 SVG 漸層遮罩與緩慢浮動的幾何圖形。最接近 Apple 官網的乾淨語彙，
-          對招募主管與企業客戶最安全。
-        </p>
-        <div class="swatches">
-          <span class="swatch" style="--c:#f8fafc"></span>
-          <span class="swatch" style="--c:#0b1220"></span>
-          <span class="swatch" style="--c:#1b4dd8"></span>
-        </div>
-        <dl class="hub-dials">
-          <dt>版面變異</dt><dd>6 / 10</dd>
-          <dt>動效強度</dt><dd>4 / 10</dd>
-          <dt>資訊密度</dt><dd>3 / 10</dd>
-          <dt>適用情境</dt><dd>求職、接案，通用度最高</dd>
-        </dl>
-        <div class="hub-card__actions">
-          <a class="hub-open" href="a.html">開啟 A 版</a>
-        </div>
-      </div>
-    </article>
 
-    <!-- B -->
-    <article class="hub-card">
-      <div class="preview" style="--preview-bg:#0d0d12">
-        <iframe src="b.html" title="B 版即時預覽：高端暗黑奢華" loading="lazy"></iframe>
-      </div>
-      <div class="hub-card__body">
-        <div class="hub-card__top">
-          <span class="hub-badge">B</span>
-          <span class="hub-file">b.html</span>
+        <div class="monogram" aria-hidden="true">
+          <span>YWK</span>
         </div>
-        <h2 class="hub-card__name">高端暗黑奢華</h2>
-        <p class="hub-card__desc">
-          深色大理石紋理、香檳金流光、襯線與無襯線混搭。標題逐字浮現，並掛上 mix-blend-mode: difference
-          的自訂游標。適合高單價的設計或顧問服務。
-        </p>
-        <div class="swatches">
-          <span class="swatch" style="--c:#0d0d12"></span>
-          <span class="swatch" style="--c:#f3efe7"></span>
-          <span class="swatch" style="--c:#c9a96b"></span>
-        </div>
-        <dl class="hub-dials">
-          <dt>版面變異</dt><dd>7 / 10</dd>
-          <dt>動效強度</dt><dd>6 / 10</dd>
-          <dt>資訊密度</dt><dd>3 / 10</dd>
-          <dt>適用情境</dt><dd>品牌合作、高單價接案</dd>
-        </dl>
-        <div class="hub-card__actions">
-          <a class="hub-open" href="b.html">開啟 B 版</a>
-        </div>
-      </div>
-    </article>
+      </section>
 
-    <!-- C -->
-    <article class="hub-card">
-      <div class="preview" style="--preview-bg:#05060a">
-        <iframe src="c.html" title="C 版即時預覽：科技未來衝擊" loading="lazy"></iframe>
-      </div>
-      <div class="hub-card__body">
-        <div class="hub-card__top">
-          <span class="hub-badge">C</span>
-          <span class="hub-file">c.html</span>
+      <section class="section" id="about" aria-labelledby="about-title">
+        <p class="section__number" aria-hidden="true">01</p>
+        <div>
+          <h2 id="about-title">About me</h2>
+          <p>
+            Hello! I am Yin Wing Kei. I am currently studying Computer
+            Engineering at HKUST. This website is a small introduction to who I
+            am and will grow with my studies and projects.
+          </p>
         </div>
-        <h2 class="hub-card__name">科技未來衝擊</h2>
-        <p class="hub-card__desc">
-          Canvas 粒子場跟著滑鼠排斥與連線，霓虹單一 accent、按鈕磁吸、卡片 1px 邊框光束。
-          用原生 Canvas 手寫，不引入 Three.js，載入仍然輕。
-        </p>
-        <div class="swatches">
-          <span class="swatch" style="--c:#05060a"></span>
-          <span class="swatch" style="--c:#e9ecf5"></span>
-          <span class="swatch" style="--c:#cbff4d"></span>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <p class="section__number" aria-hidden="true">02</p>
+        <div>
+          <h2 id="education-title">Education</h2>
+          <article class="education">
+            <p class="education__school">
+              The Hong Kong University of Science and Technology
+            </p>
+            <p>Computer Engineering</p>
+          </article>
         </div>
-        <dl class="hub-dials">
-          <dt>版面變異</dt><dd>9 / 10</dd>
-          <dt>動效強度</dt><dd>8 / 10</dd>
-          <dt>資訊密度</dt><dd>4 / 10</dd>
-          <dt>適用情境</dt><dd>技術團隊、產品端、新創</dd>
-        </dl>
-        <div class="hub-card__actions">
-          <a class="hub-open" href="c.html">開啟 C 版</a>
-        </div>
-      </div>
-    </article>
+      </section>
+    </main>
 
-    <!-- D -->
-    <article class="hub-card">
-      <div class="preview" style="--preview-bg:#f5f0e8">
-        <iframe src="d.html" title="D 版即時預覽：復古文藝質感" loading="lazy"></iframe>
-      </div>
-      <div class="hub-card__body">
-        <div class="hub-card__top">
-          <span class="hub-badge">D</span>
-          <span class="hub-file">d.html</span>
-        </div>
-        <h2 class="hub-card__name">復古文藝質感</h2>
-        <p class="hub-card__desc">
-          暖奶油紙張、膠卷顆粒、非對稱拼貼網格。作品封面預設復古色調，右上角的切換鈕可以即時換回原色，
-          是可鍵盤操作、有 aria-pressed 狀態的真按鈕。
-        </p>
-        <div class="swatches">
-          <span class="swatch" style="--c:#f5f0e8"></span>
-          <span class="swatch" style="--c:#241d18"></span>
-          <span class="swatch" style="--c:#6e1b2a"></span>
-        </div>
-        <dl class="hub-dials">
-          <dt>版面變異</dt><dd>9 / 10</dd>
-          <dt>動效強度</dt><dd>5 / 10</dd>
-          <dt>資訊密度</dt><dd>3 / 10</dd>
-          <dt>適用情境</dt><dd>內容、文化、設計導向客戶</dd>
-        </dl>
-        <div class="hub-card__actions">
-          <a class="hub-open" href="d.html">開啟 D 版</a>
-        </div>
-      </div>
-    </article>
-
-  </div>
-
-  <footer class="hub-footer">
-    <h2>怎麼切換成正式首頁</h2>
-    <ol>
-      <li>把選定的那一版改名成 <code>index.html</code>，這一頁可以刪掉，或改名成 <code>directions.html</code> 留著對照。</li>
-      <li>替換所有示範文案：姓名、經歷、專案名稱、成果數據、Email 與 GitHub 連結（搜尋「示範」可快速定位）。</li>
-      <li>把每張 <code>.cover</code> 裡的抽象 <code>.cover-art</code> 換成真實專案截圖，保留這兩層結構，hover 放大與濾鏡切換都會繼續運作。</li>
-      <li>四版都只依賴 <code>assets/css/base.css</code>、<code>assets/css/fonts.css</code> 與 <code>assets/js/site.js</code>，共用檔案請一起保留。</li>
-    </ol>
-  </footer>
-</main>
-
-<script>
-  /* 把 1280px 寬的預覽等比縮進卡片裡 */
-  (function () {
-    var boxes = [].slice.call(document.querySelectorAll('.preview'));
-    if (!boxes.length) return;
-
-    function fit() {
-      boxes.forEach(function (box) {
-        var frame = box.querySelector('iframe');
-        if (!frame) return;
-        frame.style.setProperty('--s', (box.clientWidth / 1280).toFixed(4));
-      });
-    }
-
-    fit();
-    window.addEventListener('resize', fit);
-    window.addEventListener('load', fit);
-  })();
-</script>
-
-</body>
+    <footer>
+      <p>&copy; 2026 Yin Wing Kei</p>
+      <a href="https://github.com/IMYWK">GitHub</a>
+    </footer>
+  </body>
 </html>
