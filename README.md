@@ -17,4 +17,3 @@ The homepage includes:
 
 - `index.html` — the current assignment homepage
 - `assets/css/home.css` — styles for the current homepage
-- `a.html` to `d.html` — design concepts saved for future development
